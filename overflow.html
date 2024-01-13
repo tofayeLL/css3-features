@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <Style>
+        .box{
+            width: 300px;
+            border: 4px solid steelblue;
+            height: 300px;
+            /* overflow: scroll; */
+            /* overflow: hidden; */
+            overflow: auto;
+          
+        }
+
+        #box-1{
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+
+            /* auto --- it means if you need scrollbar then it will show auto */
+            /* overflow: auto; */
+
+            /* horizontal scroll bar on and off */
+            /* overflow-x: hidden; */
+        }
+
+
+        .ellipsis{
+            width: 200px;
+            border: 2px solid tomato;
+            white-space: nowrap;
+            overflow: hidden;
+
+            /* but if we use ellipsis-------- then we can see [ ... ] at the end our width as we can see we fixed our width 200px*/
+            text-overflow: ellipsis;
+
+
+            /* if we use clip --- then [ .... ]  will not show end after finish the width as you can see we fixed 200px*/
+            /* text-overflow: clip; */
+            
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <p title="  I am a serious learner. I am spending or investing 6 to 8 hours every single day. There is no compromise about learning. no gap at all."
+        class="ellipsis">
+            I am a serious learner. I am spending or investing 6 to 8 hours every single day. There is no compromise about learning. no gap at all.
+        </p>
+    </header>
+    <section>
+        <div class="box" id="box-1">
+            <h3>My Text Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime velit nisi, laborum voluptas adipisci deleniti ex unde aperiam deserunt eos assumenda molestiae fugiat quae veniam aliquam recusandae ab neque, sint autem vero, iusto nihil delectus. Ab ad cumque dicta ullam voluptas tempore at accusamus quod cupiditate incidunt fuga natus, ipsam quidem debitis cum aspernatur totam blanditiis veritatis sed, aliquid accusantium nisi. Facilis unde atque fuga enim aperiam eum quae molestias, mollitia voluptate possimus nam quas delectus illum voluptatem corporis aliquam? Odio ea omnis odit blanditiis inventore, hic sunt minima aliquam consectetur suscipit quos accusamus expedita doloremque! Quam voluptatum, voluptatibus beatae laboriosam dignissimos unde libero ut veritatis id dolor porro similique odit eos! Modi, dolores excepturi ducimus minima placeat alias vero! Alias adipisci perferendis, cupiditate ipsam dolorum quaerat id nobis vitae magnam dignissimos doloremque, ullam in saepe praesentium, minus veniam nemo officiis. Aliquam aut corporis provident voluptate neque dicta eos suscipit nulla magni sint laudantium, incidunt nihil reprehenderit rerum quas ut officia error! Laboriosam accusantium suscipit sed illum quod reiciendis, provident voluptate aut quasi minima. Neque accusamus ipsa, voluptatum sapiente quisquam obcaecati fugiat quis ducimus quam officia rerum, et corrupti qui error voluptates adipisci temporibus rem odio! Magni, rem beatae.</p>
+        </div>
+        <div class="box">
+            <h3>My Text Box 2</h3>
+            <p>Delectus, sunt error doloremque totam, amet quibusdam laborum rerum commodi corrupti velit, iure reprehenderit ab. Repellendus minima laboriosam beatae maxime officiis architecto perspiciatis ducimus illo dolore accusamus perferendis quae nihil adipisci, et, explicabo vitae! Sed temporibus pariatur eos eum dolor, quaerat hic velit adipisci perspiciatis qui laboriosam, tempore culpa consectetur nam porro unde, blanditiis in? Eaque nemo animi sit eum dolores atque unde aut eveniet iusto totam. Aut eaque deleniti reprehenderit illo vel, perferendis quis, nihil amet asperiores non rerum consequuntur fugit commodi ipsa dolorem quas ex temporibus beatae nesciunt sed! Sit, maiores? Praesentium, excepturi? Neque voluptas quaerat suscipit nobis quia quae rerum modi qui consequatur nemo. Ut natus illum dicta, necessitatibus voluptates officia dolorum explicabo aperiam sapiente! Inventore dolor eum possimus. Eveniet, qui reprehenderit quae fuga non possimus laudantium tenetur porro autem voluptates nihil, optio repellat accusantium deserunt quod, dolorem animi incidunt sapiente eum perspiciatis error quidem voluptatem nesciunt. Explicabo alias quos cumque quam natus ullam amet! Esse omnis incidunt aperiam facere eum mollitia illum natus ipsa temporibus neque commodi officiis, magnam vel architecto veritatis autem sint. Neque quam necessitatibus hic quibusdam? Beatae facere delectus quibusdam illum soluta et ex, quod libero distinctio laborum veniam, iusto eius, assumenda debitis!</p>
+        </div>
+    </section>
+    
+</body>
+</html>
