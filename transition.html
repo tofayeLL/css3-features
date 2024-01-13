@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid tomato;
+            background-color: palegoldenrod;
+
+
+            /* property name | duration | easing function | delay */
+        /* transition: width 2s linear 2s, background-color 2s ease-in 2s; */
+
+        transition: transform 1s;
+
+        /* we can also use [ all ] instead of transform*/
+        /* transition: all 1s; */
+
+        }
+        .box:hover{
+            transform:  rotate(45deg) scale(1.50) translateX(50px);
+
+            /* width: 400px;
+            background-color: palegreen; */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform: Change the shape.
+            this is a css style property name
+        </li>
+        <li>
+            Translate: It is a value of transform stye rule.This means you move either x, or y or both axis
+        </li>
+        <li>
+            Transition: How long it will take to do the change of the shape or color
+        </li>
+    </ul>
+  
+        <div class="box" >box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+   
+    
+</body>
+</html>
