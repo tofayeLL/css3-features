@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        
+        .container, .inner{
+            height: 200px;
+            width: 200px;
+        }
+        .container{
+            border: 2px solid slateblue;
+            background-color: aquamarine;
+        }
+        .inner{
+            border: 2px solid slateblue;
+            background-color: palevioletred;
+
+             /* inside scale ---( first value works x axis, second value works y axis) */
+            /* transform: scale(0.25,0.75); */
+
+             /* rotate positive value is the same direction of the clock
+             and negative value works opposite direction of the clock */
+            /* transform: rotate(45deg); */
+            /* transform: rotate(-135deg); */
+
+
+            /* translate */
+            /* transform: translate(100px); */
+
+
+            /* to apply styles  transform more then we can use one transform inside this we can give more styles just use [ space ] between them */
+            /* transform: scale(0.75,0.5) rotate(45deg) translateX(50px) translateY(20px); */
+
+        }
+
+        /* hover effect inner */
+        .inner:hover{
+            transform: scale(0.5) rotate(45deg) translateX(100px);
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>explore transform and translate</h3>
+    <!-- .container*3>.inner{inner $} -->
+
+    <div class="container">
+        <div class="inner">inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner 2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner 3</div>
+    </div>
+    
+    
+</body>
+</html>
