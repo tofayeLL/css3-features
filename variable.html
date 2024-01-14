@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variable</title>
+    <style>
+        /* by using css variable add color and font size ---
+        this custom or variable property mostly we will use to change the theme of website */
+        
+        :root{
+            --primary-color: tomato;
+            --secondary-color: steelblue;
+            --font-size: 12px;
+        }
+
+
+       /* to call variable have to use ---[ var() ]*/
+        h1{
+            color: var(--primary-color);
+        }
+        h5{
+            background-color: var(--primary-color);
+        }
+        .box{
+            border: 2px solid var(--secondary-color);
+        }
+        .box p{
+              color: var(--secondary-color);
+              font-size: var(--font-size);
+        }
+    </style>
+</head>
+<body>
+    <h1>My custom properties</h1>
+    <h5>also commonly Known as css variables</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias reprehenderit voluptas unde eveniet, delectus illo ipsa minima laudantium rerum doloremque autem aspernatur rem nisi eaque officiis, voluptatem et ea eius!</P>
+    </div>
+    
+</body>
+</html>
